@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="visual.css">
+  <title>Gestor de Torneos con Eliminación de Equipos</title>
+</head>
+<body>
+  <h2>Gestor de Torneos con Eliminación de Equipos</h2>
+  
+  <!-- Formulario para agregar equipos -->
+  <label for="nombre">Nombre del Equipo:</label>
+  <input type="text" id="nombre">
+  <label for="ciudad">Ciudad:</label>
+  <input type="text" id="ciudad">
+  <label for="fecha">Fecha de Creación:</label>
+  <input type="date" id="fecha">
+  <button onclick="agregarEquipo()">Agregar Equipo</button>
+  
+  <hr>
+  
+  <!-- Lista de equipos agregados -->
+  <h3>Equipos:</h3>
+  <ul id="lista-equipos"></ul>
+  
+  <!-- Configuración de tamaño de grupos -->
+  <label for="tamano-grupo">Tamaño de los Grupos:</label>
+  <input type="number" id="tamano-grupo" value="3">
+  
+  <!-- Botón para asignar equipos a grupos -->
+  <button type="button" id="btnAsignarEquipos" onclick="asignarEquiposAGrupos()">Asignar Equipos a Grupos</button>
+  
+  <hr>
+  
+  <!-- Grupos asignados -->
+  <h3>Grupos Asignados:</h3>
+  <div id="grupos"></div>
+
+  <hr>
+
+  <!-- Torneo -->
+  <h3>Torneo:</h3>
+  <div id="torneo"></div>
+
+  <script>
+  </script>
+</body>
+</html>
